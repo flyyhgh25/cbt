@@ -18,6 +18,7 @@ return new class extends Migration
             $table->text('description');
             $table->integer('total_question');
             $table->boolean('is_media_content')->default(true);
+            $table->timestamps();
         });
     }
 

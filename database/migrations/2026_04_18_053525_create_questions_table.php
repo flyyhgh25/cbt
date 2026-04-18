@@ -15,10 +15,11 @@ return new class extends Migration
             $table->id();
             $table->foreignId('exam_id')->constrained()->onDelete('cascade');
             $table->foreignId('section_id')->constrained()->onDelete('cascade');
-            $table->enum('type',['multiple choice','essay']);
+            $table->enum('type',['multiple_choice','essay']);
             $table->text('content');
             $table->string('media')->nullable();
             $table->double('point')->nullable();
+            $table->timestamps();
         });
     }
 

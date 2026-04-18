@@ -18,6 +18,7 @@ return new class extends Migration
             $table->enum('status', ['not_started', 'in_progress', 'completed','finished'])->default('not_started');
             $table->timestamp('started_at')->nullable();
             $table->timestamp('ended_at')->nullable();
+            $table->timestamps();
         });
     }
 

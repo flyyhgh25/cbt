@@ -18,6 +18,7 @@ return new class extends Migration
             $table->text('snapshot_question');
             $table->json('snapshot_options');
             $table->integer('order');
+            $table->timestamps();
         });
     }
 
